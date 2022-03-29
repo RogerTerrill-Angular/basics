@@ -6,8 +6,10 @@ import {Component} from "@angular/core";
   styleUrls: ['./app.component.css'],
 })
 export class AppComponent {
-  name = 'luis ramirez'
-  imgUrl = 'https://picsum.photos/id/237/500/500'
+  name = 'luis ramirez';
+  imgUrl = 'https://picsum.photos/id/237/500/500';
+  title = 'basics';
+  currentDate = new Date();
 
   getName() {
     return this.name;
