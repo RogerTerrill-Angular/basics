@@ -1,3 +1,8 @@
+<button (click)="blueClass = !blueClass"
+  [ngClass]="{blue: blueClass}"
+>Change</button>
+
+<hr>
 <input (keyup)="changeImage($event)" [value]="imgUrl">
 
 <app-post [postImg]="imgUrl" (imgSelected)="logImg($event)">
@@ -10,3 +15,4 @@
 <p>{{ currentDate | date: 'MMMM d'}}</p>
 <p>{{ cost | currency: 'JPY' }}</p>
 <p>{{ temperature | number: '1.0-0'}}</p>
+<pre>{{ pizza | json }}</pre>
